@@ -40,12 +40,12 @@ public class ChuckNorrisQuotes {
         quotes.add("Chuck Norris once had a heart attack. His heart lost.");
     }
 
-    public static String getRandomQuote() {
+    public String getRandomQuote() {
         int randomQuoteIndex = getRandomQuoteIndex(quotes.size());
         return quotes.get(randomQuoteIndex);
     }
 
-    private static int getRandomQuoteIndex(int quotesSize) {
+    private int getRandomQuoteIndex(int quotesSize) {
         return ThreadLocalRandom.current().nextInt(1, quotesSize + 1);
     }
 }
